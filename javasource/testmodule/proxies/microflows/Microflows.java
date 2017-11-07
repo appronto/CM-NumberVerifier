@@ -50,4 +50,40 @@ public class Microflows
 			throw new MendixRuntimeException(e);
 		}
 	}
+	public static void test_Verify(IContext context)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			Core.execute(context, "TestModule.Test_Verify", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
+	public static void test_Verify_NOK(IContext context)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			Core.execute(context, "TestModule.Test_Verify_NOK", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
+	public static void test_Verify_OK(IContext context)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			Core.execute(context, "TestModule.Test_Verify_OK", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
 }
